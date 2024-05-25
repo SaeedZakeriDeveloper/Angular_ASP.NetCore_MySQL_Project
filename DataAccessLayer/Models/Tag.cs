@@ -10,6 +10,5 @@ namespace DataAccessLayer.Models
         public string Name { get; set; }
         public Language Language { get; set; }
         public ICollection<relIdeaTag> IdeaTags { get; set; }
-
     }
 }

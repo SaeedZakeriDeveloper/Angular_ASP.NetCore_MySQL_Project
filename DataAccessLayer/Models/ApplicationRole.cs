@@ -7,6 +7,5 @@ namespace DataAccessLayer.Models
 {
     public class ApplicationRole : IdentityRole<long>
     {
-        
     }
 }
