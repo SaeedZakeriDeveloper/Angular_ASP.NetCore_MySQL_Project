@@ -10,7 +10,7 @@ namespace DataAccessLayer
         public ApplicationDbContext(DbContextOptions options)
             : base(options)
         {
-            
+
         }
 
         public DbSet<Idea> Ideas { get; set; }
