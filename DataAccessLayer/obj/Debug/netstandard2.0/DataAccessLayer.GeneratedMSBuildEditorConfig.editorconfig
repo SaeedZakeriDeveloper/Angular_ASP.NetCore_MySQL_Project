@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = DataAccessLayer
+build_property.ProjectDir = D:\Projects\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\

@@ -1,0 +1,10 @@
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.deps.json
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.dll
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\bin\Debug\netstandard2.0\DataAccessLayer.pdb
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.dll
+C:\Users\TopLap\Downloads\Angular-ASP.NetCoreWebAPI-MySQL-CRUD-project-master\DataAccessLayer\obj\Debug\netstandard2.0\DataAccessLayer.pdb
