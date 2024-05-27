@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {Router, ActivatedRoute} from '@angular/router';
+import {FormBuilder, Validators, FormGroup} from '@angular/forms';
 
-import { 
+import {
   AccountService,
   AlertService
 } from '../../core';
@@ -19,19 +19,18 @@ export class SignInComponent implements OnInit {
 
   constructor(private accountSerice: AccountService,
               private alertService: AlertService,
-              private route : ActivatedRoute,
+              private route: ActivatedRoute,
               private router: Router,
-              private fb: FormBuilder) { }
+              private fb: FormBuilder) {
+  }
 
   ngOnInit() {
     // get return url from route parameters or default to '/'
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
 
     this.signInForm = this.fb.group({
-      email: ['', [Validators.required,
-                   Validators.email]],
-      password: ['', [Validators.required,
-                      Validators.minLength(8)]]
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(8)]]
     });
   }
 
@@ -39,18 +38,18 @@ export class SignInComponent implements OnInit {
     if (this.signInForm.valid) {
       this.loading = true;
       this.accountSerice.signIn(this.signInForm.value)
-      .finally(() => this.loading = false)
-      .subscribe(
-        res => {
-          this.accountSerice.saveSignedUser(res);
-          this.router.navigateByUrl(this.returnUrl);
-        },
-        err => {
-          this.alertService.error(err.error);
-        }
-      )
+        .finally(() => this.loading = false)
+        .subscribe(
+          res => {
+            this.accountSerice.saveSignedUser(res);
+            this.router.navigateByUrl(this.returnUrl);
+          },
+          err => {
+            this.alertService.error(err.error);
+          }
+        )
     }
-    
+
   }
 
 }
