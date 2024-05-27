@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import 'rxjs/add/operator/finally';
 
-import { 
+import {
   AccountService,
   AlertService
 } from '../../core';
@@ -20,16 +20,14 @@ export class SignUpComponent implements OnInit {
   constructor(private accountService: AccountService,
               private alertService: AlertService,
               private router: Router,
-              private fb: FormBuilder) { }
+              private fb: FormBuilder) {
+  }
 
   ngOnInit() {
     this.signUpForm = this.fb.group({
-      name: ['', [Validators.required, 
-                  Validators.minLength(3)]],
-      email: ['', [Validators.required,
-                   Validators.email]],
-      password: ['', [Validators.required,
-                      Validators.minLength(8)]]
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(8)]]
     })
   }
 
