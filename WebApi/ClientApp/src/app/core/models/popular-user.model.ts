@@ -1,5 +1,5 @@
 export interface PopularUser {
-    userName: string;
-    avatarURL: string;
-    rating: number;
+  userName: string;
+  avatarURL: string;
+  rating: number;
 }
