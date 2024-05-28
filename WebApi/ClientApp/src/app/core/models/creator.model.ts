@@ -1,5 +1,5 @@
 export interface Creator {
-    id: number;
-    name: string;
-    avatarURL: string;
+  id: number;
+  name: string;
+  avatarURL: string;
 }
