@@ -1,13 +1,13 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef} from '@angular/core';
+import {Router} from '@angular/router';
 
-import { 
-  Idea, 
-  Tag, 
-  Like, 
-  IdeaService, 
+import {
+  Idea,
+  Tag,
+  Like,
+  IdeaService,
   AccountService,
-  AlertService 
+  AlertService
 } from '../../../core';
 
 @Component({
@@ -25,9 +25,11 @@ export class IdeaPreviewComponent implements OnInit {
   constructor(private router: Router,
               private ideaService: IdeaService,
               private accountService: AccountService,
-              private alertService: AlertService) { }
+              private alertService: AlertService) {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   ngAfterViewInit() {
     // add READ MORE if height more than 350px
@@ -49,7 +51,8 @@ export class IdeaPreviewComponent implements OnInit {
 
     var data = new Like(this.idea.id, newUserLike);
     this.ideaService.like(data).subscribe(
-      data => { },
+      data => {
+      },
       err => {
         this.idea.currentUserLike = oldUserLike;
         this.idea.likeCount = oldLikeCount;
@@ -82,5 +85,5 @@ export class IdeaPreviewComponent implements OnInit {
       }
     )
   }
-  
+
 }

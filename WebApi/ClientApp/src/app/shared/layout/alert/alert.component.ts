@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import {
   Alert,
@@ -15,7 +15,8 @@ export class AlertComponent implements OnInit {
 
   alerts: Alert[];
 
-  constructor(private alertService: AlertService) { }
+  constructor(private alertService: AlertService) {
+  }
 
   ngOnInit() {
     this.alertService.getAlert().subscribe((alert: Alert) => {
@@ -23,7 +24,7 @@ export class AlertComponent implements OnInit {
         // clear alerts when an empty alert is received
         this.alerts = [];
         return;
-      } 
+      }
       // add alert
       this.alerts.push(alert);
       // close alert after 5s
@@ -39,18 +40,18 @@ export class AlertComponent implements OnInit {
 
   cssClass(alert: Alert) {
     if (!alert) {
-        return;
+      return;
     }
 
     switch (alert.type) {
       case AlertType.Success:
-          return 'alert alert-success';
+        return 'alert alert-success';
       case AlertType.Error:
-          return 'alert alert-danger';
+        return 'alert alert-danger';
       case AlertType.Info:
-          return 'alert alert-info';
+        return 'alert alert-info';
       case AlertType.Warning:
-          return 'alert alert-warning';
+        return 'alert alert-warning';
     }
   }
 
