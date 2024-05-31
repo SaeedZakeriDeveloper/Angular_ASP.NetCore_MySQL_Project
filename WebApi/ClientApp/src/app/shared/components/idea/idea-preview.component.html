@@ -7,9 +7,11 @@
     </div>
     <div class="col-auto">
       <div class="float-right">
-        <fa name="arrow-up" size="lg" class="icon-button" [ngClass]="idea.currentUserLike === 1 ? 'text-success' : ''" (click)="like(true)"></fa>
+        <fa name="arrow-up" size="lg" class="icon-button" [ngClass]="idea.currentUserLike === 1 ? 'text-success' : ''"
+            (click)="like(true)"></fa>
         <span [ngClass]="idea.likeCount < 0 ? 'text-danger' : 'text-success'">{{idea.likeCount}}</span>
-        <fa name="arrow-down" size="lg" class="icon-button" [ngClass]="idea.currentUserLike === -1 ? 'text-danger' : ''" (click)="like(false)"></fa>
+        <fa name="arrow-down" size="lg" class="icon-button" [ngClass]="idea.currentUserLike === -1 ? 'text-danger' : ''"
+            (click)="like(false)"></fa>
       </div>
     </div>
   </div>
@@ -32,8 +34,8 @@
     </div>
   </div>
   <div class="row mt-1 mb-1">
-    <div class="col" [froalaView]="idea.article" 
-        #content [class.collapsable]="!isCollapsed"></div>
+    <div class="col" [froalaView]="idea.article"
+         #content [class.collapsable]="!isCollapsed"></div>
   </div>
   <div class="row">
     <div class="col">
@@ -47,7 +49,8 @@
         <fa name="commenting-o" size="lg"></fa>
       </button>
       <div class="float-right">
-        <fa [name]="idea.currentUserIsFavorited ? 'star' : 'star-o'" class="text-warning icon-button" style="font-size: 1.5rem" (click)="setFavorite()"></fa>
+        <fa [name]="idea.currentUserIsFavorited ? 'star' : 'star-o'" class="text-warning icon-button"
+            style="font-size: 1.5rem" (click)="setFavorite()"></fa>
       </div>
     </div>
   </div>
